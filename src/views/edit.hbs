@@ -1,0 +1,20 @@
+<main class="edit">
+    <!-- Edit Page (Only for logged-in users) -->
+    <section id="create">
+        <div class="form">
+            <h2>Edit item</h2>
+            <form class="create-form" action="/catalog/{{currAnimal._id}}/edit" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" value="{{currAnimal.name}}" />
+                <input type="text" name="year" id="years" placeholder="Years" value="{{currAnimal.year}}" />
+                <input type="text" name="kind" id="kind" placeholder="Kind" value="{{currAnimal.kind}}" />
+                <input type="text" name="image" id="animal-img" placeholder="Image url" value="{{currAnimal.image}}" />
+                <input type="text" name="need" id="needs-of" placeholder="Needs of" value="{{currAnimal.need}}" />
+                <input type="text" name="location" id="location" placeholder="Location" value="{{currAnimal.location}}" />
+                <textarea id="description" placeholder="Description..."
+                    name="description">{{currAnimal.description}}</textarea>
+
+                <button type="submit">Edit</button>
+            </form>
+        </div>
+    </section>
+</main>
